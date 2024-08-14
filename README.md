@@ -1,0 +1,1 @@
+Proyek ini memberikan pelatihan mengenai AI dan Web Development
