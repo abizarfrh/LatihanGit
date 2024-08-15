@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evaluasi HTML Dasar</title>
+    </head>
+    <body>
+        <h1>Selamat Datang di Evaluasi HTML</h1>
+        <p>Tujuan dari halaman ini adalah untuk menguji pemahaman tentang elemen-elemen dasar dalam HTML</p>
+        <h2>Pengelolaan Teks</h2>
+        <p><strong>Napoleon Bonaparte</strong> adalah pemimpin militer yang cemerlang dan Kaisar Prancis yang mengubah Eropa. Lahir di Korsika pada 1769, ia naik dari perwira biasa menjadi penguasa yang dominan. Melalui strategi militer dan reformasi hukumnya, seperti <em>Code Napoléon</em>, ia meninggalkan warisan yang bertahan hingga kini, meski kekuasaannya akhirnya runtuh.</p>
+        <hr>
+        <blockquote><em>"Impossible is a word to be found only in the dictionary of fools."</em></blockquote>
+        <p>Sumber kutipan ini dapat ditemukan dalam berbagai biografi tentang Napoleon, termasuk dalam buku "Napoleon: A Life" karya Andrew Roberts.</p>
+        <h2>Hyperlink dan Gambar</h2>
+        <p>Ketika saya sedang memiliki waktu luang biasanya saya bermain game di <a href="https://www.crazygames.co.id/" target="_blank">CrazyGames</a></p>
+        <a href="https://www.instagram.com/" target="_blank"><img src="media/Instagram.png" alt="Instagram" width="150"></a>
+        <h2>Membuat Daftar</h2>
+        <ol>
+            <li>Saya ingin mendapat sertifikat mastered dalam Bandung AI Camp</li>
+            <li>Saya ingin freelance dan mendapat uang jajan</li>
+            <li>Saya ingin Mythic Immortal</li>
+        </ol>
+        <ul>
+            <li>Mendengarkan Musik</li>
+            <li>Menonton Film</li>
+            <li>Bermain Basket</li>
+        </ul>
+        <h2>Tabel Data</h2>
+        <table border="5">
+            <tr>
+                <th width="100">Nama</th>
+                <th width="100">Umur</th>
+                <th width="100">Kota</th>
+            </tr>
+            <tr>
+                <td>Tulus</td>
+                <td>36 Tahun</td>
+                <td>Bukittinggi</td>
+            </tr>
+            <tr>
+                <td>Sal Priadi</td>
+                <td>32 Tahun</td>
+                <td>Malang</td>
+            </tr>
+            <tr>
+                <td>Raisa</td>
+                <td>34 Tahun</td>
+                <td>Jakarta</td>
+            </tr>
+        </table>
+        <h2>Formulir Pendaftaran</h2>
+        <form action="/submit" method="post">
+            <label for="namalengkap">Nama Lengkap:</label>
+            <input type="text" id="namalengkap" name="namalengkap"><br><br>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+        
+            <label for="gender">Jenis Kelamin:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Laki-laki</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Perempuan</label><br><br>
+        
+            <select name="kota">
+                <option value="jakarta">Jakarta</option>
+                <option value="bandung">Bandung</option>
+                <option value="surabaya">Surabaya</option>
+            </select><br><br>
+
+            <input type="checkbox" name="persetujuan"> Saya setuju<br><br>
+
+            <textarea name="pesan" placeholder="Tuliskan pesan atau komentar"></textarea><br><br>
+
+            <input type="submit" value="kirim">            
+        </form>
+    </body>
+</html>
