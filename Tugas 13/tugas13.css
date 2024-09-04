@@ -1,0 +1,166 @@
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #5C6148;
+    color: white;
+    padding: 20px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #FFD700;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero-buttons .btn, .btn-outline {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #FFD700;
+    color: #5C6148;
+    border: none;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.products {
+    text-align: center;
+    padding: 40px;
+    background-color: #F3F4F6;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #F0C13D;
+    text-align: center;
+    padding: 20px 0;
+    color: #5C6148;
+}
+
+.social-icons a {
+    color: #5C6148;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-buttons .btn, .btn-outline {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .product-list {
+        gap: 10px;
+    }
+}
