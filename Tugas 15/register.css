@@ -1,0 +1,89 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Back Link */
+.back-link {
+    margin: 20px 50px;
+}
+
+.back-link a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1b2a41;
+}
+
+/* Registration Form */
+.registration-form {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.registration-form h1 {
+    font-size: 28px;
+    color: #1b2a41;
+    margin-bottom: 30px;
+}
+
+.registration-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registration-form label {
+    font-size: 18px;
+    color: #1b2a41;
+    text-align: left;
+}
+
+.registration-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #1b2a41;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #1b2a41;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #1b2a41;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
